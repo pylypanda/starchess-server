@@ -3,9 +3,11 @@ const Schema = mongoose.Schema
 
 const News = new Schema(
     {
+        img: { type: String, required: true },
         title: { type: String, required: true },
         author: { type: String, required: true },
-        message: { type: String, required: true },
+        article: { type: String, required: true },
+        date: { type: String, required: true }
     },
     { timestamps: true }
 )
